@@ -3,6 +3,38 @@
 <head>
   <meta charset="utf-8">
   
+    <!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  
+  
   <title>测试 | vici&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="og:type" content="blog">
@@ -120,7 +152,7 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
 </tr>
 </tbody>
 </table>
-<p>$$latex<br>f(x;\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} e^{ -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2 }<br>$$</p>
+<p>$E=mc^3$<br>$f(x;\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} e^{ -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2 }$</p>
 <figure class="highlight lang-r"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>summary(cars)
 </pre></td></tr></table></figure>
@@ -151,7 +183,7 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/01/05/测试/" data-id="03lnc14zf6pn55s0" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2014/01/05/测试/" data-id="p6m911silwn3rac9" class="article-share-link">Share</a>
       
       
     </footer>
